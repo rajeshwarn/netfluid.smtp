@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Net.Mail;
+using System.IO;
 
 namespace Netfluid.Smtp
 {
@@ -24,6 +25,14 @@ namespace Netfluid.Smtp
         public MailAddress From { get; set; }
         public List<MailAddress> To { get; set; }
         public string Content { get { return Mime.ToString(); } }
+
+        public Stream ContentStream
+        {
+            get
+            {
+                return new MemoryStream(Encoding.UTF8.GetBytes(Content));
+            }
+        }
 
         internal SmtpSession(SmtpServer server, TcpClient tcpClient)
 		{

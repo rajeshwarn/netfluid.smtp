@@ -31,7 +31,7 @@ namespace Netfluid.Smtp
 
         public Func<MailAddress, ValidationResult> ValidateFrom { get; set; }
 
-        public Func<SmtpSession, MailAddress, ValidationResult> ValidateRecipients { get; set; }
+        public Func<SmtpSession, MailAddress, ValidationResult> ValidateRecipient { get; set; }
 
         public SmtpServer() : this(IPAddress.Any, 25)
         {
@@ -52,7 +52,7 @@ namespace Netfluid.Smtp
 		{
             ValidateFrom = (from) => ValidationResult.Yes;
             UserAuthenticator = (sess,user,pass) => true;
-            ValidateRecipients = (sess, to) => ValidationResult.Yes;
+            ValidateRecipient = (sess, to) => ValidationResult.Yes;
             OnMessageArrived = (x) =>DateTime.Now.Ticks.ToString();
             MaxMessageSize = 10 * 1024 * 1024;
             ServerName = "localhost";

@@ -1,0 +1,5 @@
+D:\PROGETTI\Netfluid.Smtp\bin\Debug\Netfluid.Smtp.dll
+D:\PROGETTI\Netfluid.Smtp\bin\Debug\Netfluid.Smtp.pdb
+D:\PROGETTI\Netfluid.Smtp\obj\Debug\Netfluid.Smtp.csprojResolveAssemblyReference.cache
+D:\PROGETTI\Netfluid.Smtp\obj\Debug\Netfluid.Smtp.dll
+D:\PROGETTI\Netfluid.Smtp\obj\Debug\Netfluid.Smtp.pdb

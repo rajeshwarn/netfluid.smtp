@@ -95,7 +95,7 @@ namespace Netfluid.Smtp
 			}
 			enumerator.ConsumeWhile((Token t) => t.Kind == TokenKind.Space);
 			MailAddress address;
-			return !_parser.TryMakePath(enumerator, out address) ? MakeInvalid(SmtpReplyCode.SyntaxError, ""): new RcptCommand(address, _server.ValidateRecipients);
+			return !_parser.TryMakePath(enumerator, out address) ? MakeInvalid(SmtpReplyCode.SyntaxError, ""): new RcptCommand(address, _server.ValidateRecipient);
 		}
 		internal SmtpCommand MakeData(TokenEnumerator enumerator)
 		{
