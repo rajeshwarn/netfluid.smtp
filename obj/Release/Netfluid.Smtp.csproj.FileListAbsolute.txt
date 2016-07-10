@@ -1,0 +1,4 @@
+D:\PROGETTI\Netfluid.Smtp\bin\Release\Netfluid.Smtp.dll
+D:\PROGETTI\Netfluid.Smtp\bin\Release\Netfluid.Smtp.pdb
+D:\PROGETTI\Netfluid.Smtp\obj\Release\Netfluid.Smtp.dll
+D:\PROGETTI\Netfluid.Smtp\obj\Release\Netfluid.Smtp.pdb
